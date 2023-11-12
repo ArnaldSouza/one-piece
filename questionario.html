@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/Questionario.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Questionario</title>
+
+</head>
+
+
+<body id="bode">
+
+    <div id="pagina1" style="display: block;">
+
+        <header>
+            <h2 class="texto">Quantos quilômetros, em média, você dirige de carro a cada mês?</h2>
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0km</h2>
+            <input type="range" min="1" max="800" class="slider" id="kmCarro">
+            <h2 class="numero">800km</h2>
+        </div>
+
+    </div>
+
+
+    <div id="pagina2" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Qual a eficiência do seu carro? (km/l) <br>
+                Para carro elétrico deixe 0
+            </h2>
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0</h2>
+            <input type="range" min="1" max="40" class="slider" id="eficCarro">
+            <h2 class="numero">40</h2>
+        </div>
+
+    </div>
+
+    <div id="pagina3" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Quantos quilômetros, em média, você dirige de moto a cada mês?
+            </h2>
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0 km</h2>
+            <input type="range" min="1" max="800" class="slider" id="kmMoto">
+            <h2 class="numero">800 km</h2>
+        </div>
+
+    </div>
+
+    <div id="pagina4" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Qual o rendimento da sua moto? (km/l) <br>
+                Para moto elétrica deixe 0
+            </h2>
+
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0</h2>
+            <input type="range" min="1" max="40" class="slider" id="eficMoto">
+            <h2 class="numero">40</h2>
+        </div>
+    </div>
+
+    <div id="pagina5" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Quantos quilometros você anda de transporte público, aproximadamente, por mês?
+            </h2>
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0 km</h2>
+            <input type="range" min="1" max="800" class="slider" id="kmTransPublico">
+            <h2 class="numero">800 km</h2>
+        </div>
+
+    </div>
+
+    <div id="pagina6" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Quantas pessoas moram com você?
+            </h2>
+        </header>
+        <center>
+            <div>
+                <select class="form-select" aria-label="Default select example" id="pessoasMoram">
+                    <option selected>Selecione</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </center>
+    </div>
+
+    <div id="pagina7" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Das pessoas em sua casa, quantas consomem carne?
+            </h2>
+        </header>
+        <center>
+            <div class="numero">
+                <select class="form-select" aria-label="Default select example" id="consumoCarne">
+                    <option selected>Selecione</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </center>
+    </div>
+
+    <div id="pagina8" style="display: none;">
+        <header>
+            <h2 class="texto">
+                Aproximadamente qual a porcentagem de energia reutilizavel da sua casa?
+            </h2>
+        </header>
+
+        <div class="slidecontainer">
+            <h2 class="numero">0</h2>
+            <input type="range" min="1" max="100" class="slider" id="energia">
+            <h2 class="numero">100</h2>
+        </div>
+
+    </div>
+
+    <div id="pagina9" style="display: none;">
+        <center>
+            <h1 class="texto">A sua pegada de carbono mensal é de <label id="resultado"> </label> kg/mês </h1>
+        </center>
+
+
+        <div id="pg9">
+            <div>
+                <center>
+                    <h3 id="final">
+                        Parabéns por usar nossa Calculadora de Pegada de Carbono e por se preocupar com o
+                        impacto que suas ações têm no meio ambiente. No entanto, ao calcular uma pegada de carbono
+                        significativamente alta, é importante refletir sobre o impacto que isso tem no nosso planeta. <br>
+    
+                        Valores muito altos indicam um nível de consumo de recursos e emissões de carbono que excede a
+                        capacidade de regeneração da Terra. Isso contribui para as mudanças climáticas, o esgotamento de
+                        recursos naturais e a degradação do meio ambiente. <br>
+    
+                        Mas lembre-se, reconhecer uma pegada de carbono alta não é um motivo para desespero, é uma
+                        oportunidade de ação. Você pode tomar medidas significativas para reduzir sua pegada de carbono.
+                        Comece fazendo pequenas mudanças em seu estilo de vida, como reduzir o consumo de energia, optar por
+                        transporte sustentável, reduzir o desperdício e apoiar iniciativas ecológicas. <br>
+    
+                        Cada ação individual conta, e quando muitas pessoas se unem em busca de um objetivo comum, podemos
+                        fazer a diferença. Vamos trabalhar juntos para reduzir nossas pegadas de carbono e proteger o nosso
+                        planeta para as futuras gerações. <br>
+                    </h3>
+                </div>
+
+                </center>
+                
+            <canvas id="graficoPizza" ></canvas>
+        </div>
+
+    </div>
+    
+    <button id="botaoNext" class="botao" onclick="next()">Próximo</button>
+    <button id="botaoBack" class="botao" onclick="back()">Voltar</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./src/js/questionario.js"></script>
+</body>
+
+</html>

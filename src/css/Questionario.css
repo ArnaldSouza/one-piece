@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.slidecontainer {
+  width: 80%;
+  text-align: center;
+  margin-top: 300px;
+  margin-left: 10%;
+  align-items: center;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #37BE6D;
+  outline: none;
+  opacity: 1;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #035615;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.botao {
+  font-family: 'Londrina Solid', sans-serif;
+  font-size: 24px;
+  background-color: #006140;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 80px;
+}
+
+.texto {
+  font-family: 'Londrina Solid', sans-serif;
+  color: #006140;
+  text-align: center;
+}
+
+.numero {
+  font-family: 'League Gothic', sans-serif;
+  color: #000000;
+  padding: 20px;
+}
+
+.botao:hover {
+  background-color: rgba(0, 97, 69, 0.8);
+}
+
+div {
+  display: inline-flex;
+}
+
+#bode {
+  background-color: #FFFFE0;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+form {
+  text-align: center;
+}
+
+#consumoCarne {
+  position: relative;
+  background-color: #ffffff;
+  font-family: 'League Gothic', sans-serif;
+  font-size: xx-large;
+  border-radius: 5px;
+  border-color: #04AA6D;
+  box-shadow: rgba(0, 97, 69, 0.8);
+  display: block;
+  margin: 100px auto;
+}
+
+#pessoasMoram {
+  position: relative;
+  background-color: #ffffff;
+  font-family: 'League Gothic', sans-serif;
+  font-size: xx-large;
+  border-radius: 5px;
+  border-color: #04AA6D;
+  box-shadow: rgba(0, 97, 69, 0.8);
+  display: block;
+  margin: 100px auto;
+}
+
+#pg9 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+#graficoPizza {
+  width: 800px;
+  height: 800px;
+}
+
+#final{
+  font-family: 'League Gothic', sans-serif;
+  color: #000000;
+  padding-top: 20px;
+  padding-left: 25px;
+  text-align: justify;
+}
